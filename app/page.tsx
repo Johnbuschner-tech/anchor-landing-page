@@ -9,8 +9,8 @@ const APP_URL = "https://anchor-recovery-app.vercel.app"
 const DF = "var(--font-cormorant,'Cormorant Garamond',serif)"
 
 const FEATURES = [
-  { icon: Shield,      title: "SOS Crisis Mode",        desc: "13 guided tools for immediate relief — breathing, grounding, urge surfing, and more. One tap, no learning curve.",      tag: "Immediate Relief",  color: "teal"  },
-  { icon: BookOpen,    title: "Skills Library",          desc: "20+ evidence-based techniques organized by Body, Mind, Spirit, Social, and Crisis — each with clinical context.",      tag: "Learn & Practice",  color: "teal"  },
+  { icon: Shield,      title: "SOS Crisis Mode",        desc: "13 guided tools for immediate relief â breathing, grounding, urge surfing, and more. One tap, no learning curve.",      tag: "Immediate Relief",  color: "teal"  },
+  { icon: BookOpen,    title: "Skills Library",          desc: "29 evidence-based techniques organized by Body, Mind, Spirit, Social, and Crisis â each with clinical context.",      tag: "Learn & Practice",  color: "teal"  },
   { icon: Star,        title: "Skill of the Day",        desc: "A different curated practice every day builds resilience over time. Today's skill is always front and center.",       tag: "Daily Habit",       color: "amber" },
   { icon: Activity,    title: "Mood Check-In",           desc: "A 5-second daily emotional check-in to build self-awareness. Patterns over time reveal what your recovery needs.",   tag: "Self-Awareness",    color: "teal"  },
   { icon: TrendingUp,  title: "Achievement System",      desc: "Every coping skill practiced earns recognition. Milestones and streaks remind you how far you've come.",             tag: "Progress Tracking", color: "amber" },
@@ -18,25 +18,25 @@ const FEATURES = [
 ]
 
 const SOS_TOOLS = [
-  { emoji: "🌬️", name: "Box Breathing",       desc: "4-4-4-4 Navy SEAL reset" },
-  { emoji: "🌱", name: "5-4-3-2-1 Grounding", desc: "5-sense panic anchor" },
-  { emoji: "🔍", name: "HALT Check-In",        desc: "Name the need" },
-  { emoji: "🏄", name: "Urge Surfing",         desc: "Ride cravings like a wave" },
-  { emoji: "👆", name: "EFT Tapping",          desc: "Acupressure for calm" },
-  { emoji: "🦋", name: "Butterfly Hug",        desc: "EMDR bilateral stim" },
-  { emoji: "🔄", name: "Opposite Action",      desc: "DBT behavior shift" },
-  { emoji: "🧩", name: "Cognitive Defusion",   desc: "Detach from thoughts" },
-  { emoji: "💬", name: "Coping Mantras",       desc: "Recovery affirmations" },
-  { emoji: "💡", name: "ABC Check-In",         desc: "REBT thought analysis" },
-  { emoji: "👊", name: "DISARM",               desc: "Challenge distortions" },
-  { emoji: "🧘", name: "Guided Body Scan",     desc: "Tension release" },
-  { emoji: "📞", name: "Crisis Help",          desc: "988, SAMHSA, Text Line" },
+  { emoji: "ð¬ï¸", name: "Box Breathing",       desc: "4-4-4-4 Navy SEAL reset" },
+  { emoji: "ð±", name: "5-4-3-2-1 Grounding", desc: "5-sense panic anchor" },
+  { emoji: "ð", name: "HALT Check-In",        desc: "Name the need" },
+  { emoji: "ð", name: "Urge Surfing",         desc: "Ride cravings like a wave" },
+  { emoji: "ð", name: "EFT Tapping",          desc: "Acupressure for calm" },
+  { emoji: "ð¦", name: "Butterfly Hug",        desc: "EMDR bilateral stim" },
+  { emoji: "ð", name: "Opposite Action",      desc: "DBT behavior shift" },
+  { emoji: "ð§©", name: "Cognitive Defusion",   desc: "Detach from thoughts" },
+  { emoji: "ð¬", name: "Coping Mantras",       desc: "Recovery affirmations" },
+  { emoji: "ð¡", name: "ABC Check-In",         desc: "REBT thought analysis" },
+  { emoji: "ð", name: "DISARM",               desc: "Challenge distortions" },
+  { emoji: "ð§", name: "Guided Body Scan",     desc: "Tension release" },
+  { emoji: "ð", name: "Crisis Help",          desc: "988, SAMHSA, Text Line" },
 ]
 
 const STEPS = [
-  { num: "01", title: "Open Anchor",      desc: "No signup, no barrier. Open the app the moment a craving hits — your toolkit is ready instantly.",                               emoji: "📱" },
-  { num: "02", title: "Choose Your Tool", desc: "Browse 13 instant SOS skills or follow your Skill of the Day. Every exercise is fully guided step-by-step.",                     emoji: "🎯" },
-  { num: "03", title: "Practice & Grow",  desc: "Work through the skill, check in on your mood, and earn recognition for every step you take in your recovery journey.",         emoji: "🏆" },
+  { num: "01", title: "Open Anchor",      desc: "No signup, no barrier. Open the app the moment a craving hits â your toolkit is ready instantly.",                               emoji: "ð±" },
+  { num: "02", title: "Choose Your Tool", desc: "Browse 13 instant SOS skills or follow your Skill of the Day. Every exercise is fully guided step-by-step.",                     emoji: "ð¯" },
+  { num: "03", title: "Practice & Grow",  desc: "Work through the skill, check in on your mood, and earn recognition for every step you take in your recovery journey.",         emoji: "ð" },
 ]
 
 function FadeIn({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
@@ -64,13 +64,13 @@ function PhoneMockup() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20" style={{ width: "112px", height: "28px", background: "#060d1f", borderRadius: "0 0 20px 20px" }} />
         <div className="flex flex-col h-full" style={{ background: "#090f22" }}>
           <div className="pt-2 px-7 flex justify-between" style={{ fontSize: "9px", color: "#4b5f7f" }}>
-            <span>9:41</span><span style={{ color: "#0fb3a5" }}>⚡ 100%</span>
+            <span>9:41</span><span style={{ color: "#0fb3a5" }}>â¡ 100%</span>
           </div>
           <div className="px-5 py-3" style={{ background: "linear-gradient(135deg, #0c4a42 0%, #0a3d3a 100%)", borderBottom: "1px solid rgba(15,179,165,0.2)" }}>
             <div className="flex items-center justify-between">
               <div>
                 <p style={{ fontSize: "9px", color: "#5eead4", letterSpacing: "0.04em" }}>Good morning,</p>
-                <h3 className="font-bold text-white" style={{ fontSize: "16px", letterSpacing: "-0.02em" }}>⚓ Anchor</h3>
+                <h3 className="font-bold text-white" style={{ fontSize: "16px", letterSpacing: "-0.02em" }}>â Anchor</h3>
               </div>
               <div className="flex items-center justify-center font-bold text-white" style={{ width: "32px", height: "32px", borderRadius: "50%", background: "rgba(15,179,165,0.3)", border: "1px solid rgba(15,179,165,0.4)", fontSize: "12px" }}>J</div>
             </div>
@@ -78,22 +78,22 @@ function PhoneMockup() {
           <div className="flex-1 overflow-hidden px-3 py-3 space-y-2.5">
             <div className="rounded-2xl p-3" style={{ background: "#0f1835", border: "1px solid rgba(30,45,80,0.8)" }}>
               <div className="flex items-center gap-1.5 mb-2">
-                <span style={{ fontSize: "8px", color: "#f59e0b", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" }}>⭐ Skill of the Day</span>
+                <span style={{ fontSize: "8px", color: "#f59e0b", fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" }}>â­ Skill of the Day</span>
               </div>
               <div className="flex items-start gap-2.5">
-                <span style={{ fontSize: "20px" }}>🌬️</span>
+                <span style={{ fontSize: "20px" }}>ð¬ï¸</span>
                 <div className="flex-1">
                   <p className="text-white font-semibold" style={{ fontSize: "11px" }}>Box Breathing</p>
                   <span style={{ fontSize: "8px", color: "#0fb3a5", fontWeight: 500 }}>Body</span>
                   <p style={{ fontSize: "8px", color: "#64748b", marginTop: "2px", lineHeight: 1.4 }}>4-4-4-4 Navy SEAL stress reset.</p>
                 </div>
               </div>
-              <div className="mt-2 inline-block" style={{ background: "rgba(15,179,165,0.12)", color: "#2dd4bf", fontSize: "8px", padding: "4px 10px", borderRadius: "8px", fontWeight: 500 }}>Practice Now →</div>
+              <div className="mt-2 inline-block" style={{ background: "rgba(15,179,165,0.12)", color: "#2dd4bf", fontSize: "8px", padding: "4px 10px", borderRadius: "8px", fontWeight: 500 }}>Practice Now â</div>
             </div>
             <div className="rounded-2xl p-3" style={{ background: "#0f1835", border: "1px solid rgba(30,45,80,0.8)" }}>
               <p className="font-medium mb-2" style={{ fontSize: "9px", color: "#64748b" }}>How are you feeling today?</p>
               <div className="flex justify-between px-1">
-                {["😔","😕","😐","🙂","😊"].map((em, i) => (
+                {["ð","ð","ð","ð","ð"].map((em, i) => (
                   <div key={i} className="flex items-center justify-center" style={{ width: "36px", height: "36px", borderRadius: "10px", fontSize: "15px", background: i===3 ? "rgba(15,179,165,0.2)" : "rgba(15,25,50,0.8)", border: i===3 ? "1px solid rgba(15,179,165,0.5)" : "1px solid transparent" }}>{em}</div>
                 ))}
               </div>
@@ -103,10 +103,10 @@ function PhoneMockup() {
                 <p className="font-bold" style={{ fontSize: "10px", color: "#5eead4" }}>SOS Crisis Tools</p>
                 <p style={{ fontSize: "8px", color: "#4b5f7f" }}>13 immediate relief tools</p>
               </div>
-              <span style={{ fontSize: "20px" }}>🆘</span>
+              <span style={{ fontSize: "20px" }}>ð</span>
             </div>
             <div className="grid grid-cols-3 gap-2">
-              {[["🔥","3","Day streak"],["✅","12","Skills used"],["🏆","2","Earned"]].map(([icon,num,label]) => (
+              {[["ð¥","3","Day streak"],["â","12","Skills used"],["ð","2","Earned"]].map(([icon,num,label]) => (
                 <div key={String(label)} className="text-center" style={{ background: "#0f1835", borderRadius: "12px", padding: "8px 4px", border: "1px solid rgba(30,45,80,0.6)" }}>
                   <div style={{ fontSize: "14px" }}>{icon}</div>
                   <div className="text-white font-bold" style={{ fontSize: "13px", lineHeight: 1.1 }}>{num}</div>
@@ -116,7 +116,7 @@ function PhoneMockup() {
             </div>
           </div>
           <div className="flex justify-around px-4 py-2" style={{ background: "#0b1228", borderTop: "1px solid rgba(30,45,80,0.7)" }}>
-            {[["🏠","Home",true],["🧰","Skills",false],["📊","Progress",false],["⚙️","More",false]].map(([icon,label,active]) => (
+            {[["ð ","Home",true],["ð§°","Skills",false],["ð","Progress",false],["âï¸","More",false]].map(([icon,label,active]) => (
               <div key={String(label)} className="flex flex-col items-center gap-0.5">
                 <span style={{ fontSize: "14px" }}>{icon}</span>
                 <span style={{ fontSize: "7px", color: active ? "#0fb3a5" : "#2d3f5f" }}>{label}</span>
@@ -149,7 +149,7 @@ export default function LandingPage() {
         style={{ background: scrolled ? "rgba(5,8,26,0.92)" : "transparent", backdropFilter: scrolled ? "blur(20px)" : "none", borderColor: "rgba(30,45,80,0.6)" }}>
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <span className="text-2xl">⚓</span>
+            <span className="text-2xl">â</span>
             <span className="text-white font-bold tracking-tight" style={{ fontFamily: DF, fontSize: "1.6rem" }}>ANCHOR</span>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm" style={{ color: "#64748b" }}>
@@ -175,7 +175,7 @@ export default function LandingPage() {
             ))}
             <a href={APP_URL} target="_blank" rel="noopener noreferrer"
               className="block text-center font-semibold text-white rounded-xl py-3" style={{ background: "#0fb3a5" }}>
-              Open Anchor Free →
+              Open Anchor Free â
             </a>
           </motion.div>
         )}
@@ -197,7 +197,7 @@ export default function LandingPage() {
                 When Recovery<br />Gets Hard,<br /><span style={{ color: "#0fb3a5", fontStyle: "italic" }}>Anchor Holds.</span>
               </h1>
               <p className="text-lg leading-relaxed max-w-md" style={{ color: "#64748b" }}>
-                20+ evidence-based coping skills for addiction recovery — breathing, grounding, urge surfing, and more. Free, private, and available the moment you need it most.
+                41 evidence-based coping skills for addiction recovery â breathing, grounding, urge surfing, and more. Free, private, and available the moment you need it most.
               </p>
               <div className="flex flex-wrap gap-4">
                 <a href={APP_URL} target="_blank" rel="noopener noreferrer"
@@ -211,7 +211,7 @@ export default function LandingPage() {
                 </a>
               </div>
               <div className="flex flex-wrap gap-5">
-                {["Free — no credit card","Works offline","Private by design"].map(item => (
+                {["Free â no credit card","Works offline","Private by design"].map(item => (
                   <div key={item} className="flex items-center gap-2 text-sm" style={{ color: "#475569" }}>
                     <CheckCircle className="w-4 h-4" style={{ color: "#0fb3a5" }} />{item}
                   </div>
@@ -228,7 +228,7 @@ export default function LandingPage() {
       {/* TRUST BAR */}
       <section className="px-6 py-8 border-y" style={{ background: "rgba(15,25,50,0.5)", borderColor: "rgba(30,45,80,0.5)" }}>
         <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-10 md:gap-16">
-          {[["20+","Evidence-Based Tools"],["13","Instant SOS Skills"],["Free","Always & Forever"],["Offline","Works Without Data"],["Private","No Account Required"]].map(([num,label]) => (
+          {[["41","Total Coping Skills"],["29","Skills Library"],["13","Instant SOS Skills"],["Free","Always & Forever"],["Offline","Works Without Data"],["Private","No Account Required"]].map(([num,label]) => (
             <div key={String(label)} className="text-center">
               <div className="font-bold" style={{ fontFamily: DF, fontSize: "2rem", color: "#0fb3a5", lineHeight: 1 }}>{num}</div>
               <div className="text-xs mt-1" style={{ color: "#475569" }}>{label}</div>
@@ -277,7 +277,7 @@ export default function LandingPage() {
             <p className="text-sm font-semibold uppercase tracking-widest mb-5" style={{ color: "#0fb3a5", letterSpacing: "0.15em" }}>SOS Mode</p>
             <h2 className="font-bold text-white" style={{ fontFamily: DF, fontSize: "clamp(2.5rem,5vw,4rem)", lineHeight: 1.05 }}>13 Instant Relief Tools</h2>
             <p className="mt-6 max-w-xl mx-auto leading-relaxed" style={{ color: "#64748b" }}>
-              When a craving or crisis hits, you need help <em>immediately</em> — not a tutorial. Every SOS tool is guided step-by-step and ready in one tap.
+              When a craving or crisis hits, you need help <em>immediately</em> â not a tutorial. Every SOS tool is guided step-by-step and ready in one tap.
             </p>
           </FadeIn>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
@@ -343,10 +343,10 @@ export default function LandingPage() {
               </div>
               <h2 className="font-bold text-white mb-5" style={{ fontFamily: DF, fontSize: "clamp(2rem,4vw,3rem)", lineHeight: 1.1 }}>Grounded in Clinical Science</h2>
               <p className="max-w-2xl mx-auto leading-relaxed mb-8" style={{ color: "#64748b", fontSize: "1.05rem" }}>
-                Every tool in Anchor is grounded in peer-reviewed research and evidence-based therapeutic frameworks used by addiction counselors, psychiatrists, and recovery coaches worldwide. Built by Recovery Life Collective — an addiction treatment referral service helping people find the right care.
+                Every tool in Anchor is grounded in peer-reviewed research and evidence-based therapeutic frameworks used by addiction counselors, psychiatrists, and recovery coaches worldwide. Built by Recovery Life Collective â an addiction treatment referral service helping people find the right care.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-left max-w-3xl mx-auto">
-                {[["❤️","Built with Compassion","Designed by people who understand what recovery actually looks like."],["🔬","Evidence-Based","Every skill backed by clinical research and therapeutic frameworks."],["🔒","Private by Design","No account required. Nothing stored on servers. Your recovery stays yours."]].map(([icon,title,desc]) => (
+                {[["â¤ï¸","Built with Compassion","Designed by people who understand what recovery actually looks like."],["ð¬","Evidence-Based","Every skill backed by clinical research and therapeutic frameworks."],["ð","Private by Design","No account required. Nothing stored on servers. Your recovery stays yours."]].map(([icon,title,desc]) => (
                   <div key={String(title)} className="flex gap-3">
                     <span className="text-xl mt-0.5">{icon}</span>
                     <div>
@@ -365,12 +365,12 @@ export default function LandingPage() {
       <section className="py-32 px-6 md:px-12 relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%,rgba(15,179,165,0.07) 0%,transparent 70%)" }} />
         <FadeIn className="max-w-3xl mx-auto text-center relative z-10">
-          <div className="text-5xl mb-6">⚓</div>
+          <div className="text-5xl mb-6">â</div>
           <h2 className="font-bold text-white mb-6" style={{ fontFamily: DF, fontSize: "clamp(2.5rem,6vw,4.5rem)", lineHeight: 1 }}>
             Your Recovery Toolkit<br /><span style={{ color: "#0fb3a5", fontStyle: "italic" }}>Starts Today.</span>
           </h2>
           <p className="text-lg mb-10 max-w-xl mx-auto leading-relaxed" style={{ color: "#64748b" }}>
-            20+ evidence-based coping skills. Free forever. No signup required.
+            41 evidence-based coping skills — 29 in the library, 13 instant SOS tools. Free forever. No signup required.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href={APP_URL} target="_blank" rel="noopener noreferrer"
@@ -383,7 +383,7 @@ export default function LandingPage() {
               Learn More
             </a>
           </div>
-          <p className="mt-8 text-sm" style={{ color: "#2d3f5f" }}>Free forever • Works offline • Private & secure</p>
+          <p className="mt-8 text-sm" style={{ color: "#2d3f5f" }}>Free forever â¢ Works offline â¢ Private & secure</p>
         </FadeIn>
       </section>
 
@@ -392,7 +392,7 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2.5">
-              <span className="text-xl">⚓</span>
+              <span className="text-xl">â</span>
               <div>
                 <span className="text-white font-bold" style={{ fontFamily: DF, fontSize: "1.2rem" }}>ANCHOR</span>
                 <p className="text-xs" style={{ color: "#2d3f5f" }}>Recovery Coping Skills</p>
@@ -405,7 +405,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="mt-8 pt-6 flex flex-col md:flex-row justify-between items-center gap-3 text-xs border-t" style={{ color: "#1e293b", borderColor: "rgba(30,45,80,0.4)" }}>
-            <p>© {new Date().getFullYear()} Recovery Life Collective LLC. All rights reserved.</p>
+            <p>Â© {new Date().getFullYear()} Recovery Life Collective LLC. All rights reserved.</p>
             <p>Built with compassion for the recovery community.</p>
           </div>
         </div>
